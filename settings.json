@@ -1,0 +1,11 @@
+{
+    "terminal.integrated.defaultLocation": "editor",
+    "cursor.chat.showSuggestedFiles": true,
+    "editor.smoothScrolling": true,
+    "git.autofetch": true,
+    "editor.hover.enabled": false,
+    "files.autoSave": "onFocusChange",
+    "r.rterm.mac": "/Users/fred/.local/bin/radian",
+    "r.bracketedPaste": true,
+    "r.plot.useHttpgd": true,
+}

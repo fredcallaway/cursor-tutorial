@@ -1,0 +1,78 @@
+[
+    // create a new code cell
+    {
+        "key": "ctrl+n",
+        "command": "type",
+        "args": {
+            "text": "# %% --------\n"
+        }
+    },
+    // running R code
+    {
+        "key": "shift+enter",
+        "command": "r.runSelection",  // and move to next line
+        "when": "editorTextFocus && (editorLangId == 'r' || editorLangId == 'rmd')"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "r.runSelectionRetainCursor", // don't move to next line
+        "when": "editorTextFocus && (editorLangId == 'r' || editorLangId == 'rmd')"
+    },
+    {
+        "key": "ctrl+shift+enter",
+        "command": "r.runCurrentChunkAndMove",
+        "when": "editorTextFocus && editorLangId == 'r'"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "r.runCurrentChunk",
+        "when": "editorTextFocus && (editorLangId == 'r' || editorLangId == 'rmd')"
+    },
+    // running python code
+    {
+        "key": "shift+enter",
+        "command": "-python.execSelectionInTerminal",
+        "when": "editorTextFocus && !findInputFocussed && !python.datascience.ownsSelection && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-python.datascience.execSelectionInteractive",
+        "when": "editorTextFocus && python.datascience.featureenabled && python.datascience.ownsSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "python.datascience.execSelectionInteractive",
+        "when": "editorTextFocus && python.datascience.featureenabled && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    // running julia code
+    {
+        "key": "shift+enter",
+        "command": "language-julia.executeCodeBlockOrSelectionAndMove",
+        "when": "editorTextFocus && editorLangId == 'julia'"
+    },
+    {
+        "key": "alt+enter",
+        "command": "-language-julia.executeCodeBlockOrSelectionAndMove",
+        "when": "editorTextFocus && editorLangId == 'julia'"
+    },
+    {
+        "key": "ctrl+shift+enter",
+        "command": "language-julia.executeCellAndMove",
+        "when": "editorTextFocus && editorLangId == 'julia'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-language-julia.executeCellAndMove",
+        "when": "editorTextFocus && editorLangId == 'julia'"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "language-julia.executeCodeBlockOrSelection",
+        "when": "editorTextFocus && editorLangId == 'julia'"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "language-julia.executeCell",
+        "when": "editorTextFocus && editorLangId == 'julia'"
+    }
+]

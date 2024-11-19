@@ -27,9 +27,18 @@ Here are my instructions:
 
 ## Good keyboard shortcuts to know
 
-- cmd-shift-P: opens the command palette
-- ctrl-R:open a recent directory
-- 
+- cmd-shift-P: open the command palette
+- cmd-O: open a directory
+- cmd-P: open a file in your current directory
+- ctrl-R: open a recent directory
+
+If you're a terminal person, run the "Install Code Command" command. Then you can use `code .` to open your current directory in Cursor.
+
+## Suggested settings
+
+See settings.json and keybindings.json. Paste these into your own configuration files, which you can open by searching for "usj" and "ksj" in the command palette. Make sure not to include the top level brackets (since those should already be there).
+
+N.B. learning a short acronym for commands you use frequently is a good compromise between speed and ease (vs. defining and remembering keyboard shortcuts).
 
 # Using the AI
 

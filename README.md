@@ -1,16 +1,5 @@
 # Setup
 
-## AI rules
-
-`cmd-shift-J` to open Cursor Settings (or search in command palette).
-
-Here are my instructions:
-
-- Restate the task before you begin solving it.  
-- Briefly summarize the implementation plan before you begin coding. Make this very brief.  
-- Do not add superfluous comments when the code itself is clear.  
-- Do not provide explanations after writing code unless I ask for them.  
-
 ## Recommended packages
 
 - Error Lens: show warnings and errors inline
@@ -38,7 +27,21 @@ If you're a terminal person, run the "Install Code Command" command. Then you ca
 
 See settings.json and keybindings.json. Paste these into your own configuration files, which you can open by searching for "usj" and "ksj" in the command palette. Make sure not to include the top level brackets (since those should already be there).
 
+Look at what you're pasting---you might want to tweak things (especially the keybindings).
+
 N.B. learning a short acronym for commands you use frequently is a good compromise between speed and ease (vs. defining and remembering keyboard shortcuts).
+
+## AI rules
+
+`cmd-shift-J` to open Cursor Settings (or search in command palette).
+
+Here are my instructions:
+
+- Restate the task before you begin solving it.  
+- Briefly summarize the implementation plan before you begin coding. Make this very brief.  
+- Do not add superfluous comments when the code itself is clear.  
+- Do not provide explanations after writing code unless I ask for them.  
+
 
 # Using the AI
 
@@ -118,9 +121,10 @@ settings:
 Use the radian console
 ```sh
 pip3 install radian
+which radian
 ```
-settings: 
+settings (set radian path based on output of above command)
 ```json
-  "r.rterm.mac": "/Users/fred/.local/bin/radian",
+  "r.rterm.mac": "YOUR RADIAN PATH",
   "r.bracketedPaste": true
 ```

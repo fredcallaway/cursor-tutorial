@@ -3,9 +3,10 @@
     "cursor.chat.showSuggestedFiles": true,
     "editor.smoothScrolling": true,
     "git.autofetch": true,
-    "editor.hover.enabled": false,
     "files.autoSave": "onFocusChange",
-    "r.rterm.mac": "/Users/fred/.local/bin/radian",
-    "r.bracketedPaste": true,
     "r.plot.useHttpgd": true,
+    // "editor.hover.enabled": false, // disable hover tooltips if they annoy you
+    // uncomment below if you installed radian, setting the path correctly
+    // "r.rterm.mac": "/Users/fred/.local/bin/radian",
+    // "r.bracketedPaste": true,
 }

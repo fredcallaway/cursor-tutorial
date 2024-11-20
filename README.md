@@ -94,9 +94,9 @@ brew install r harfbuzz fribidi freetype
 brew install --cask cmake
 ```
 
-This line prevent the annoying "which server" request when you install packages
+This command (in terminal) prevent the annoying "which server" request when you install packages
 ```sh
-cat 'options(repos = c(CRAN = "https://lib.stat.cmu.edu/R/CRAN/"))' > ~/.Rprofile'
+echo 'options(repos = c(CRAN = "https://lib.stat.cmu.edu/R/CRAN/"))' > ~/.Rprofile
 ```
 
 Install the R extension (REditorSupport.r) and the accompanying R package.
@@ -104,9 +104,9 @@ Install the R extension (REditorSupport.r) and the accompanying R package.
 install.packages("rlanguageserver")
 ```
 
-Disable annoying linters ("error" messages about style)
+Disable annoying linters ("error" messages about style) with this terminal command
 ```sh
-cat 'linters: linters_with_tags("correctness")' > ~/.lintrc
+echo 'linters: linters_with_tags("correctness")' > ~/.lintrc
 ```
 
 Use httpgd for plots
